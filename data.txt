@@ -1,0 +1,7 @@
+6
+0|v0|sample description|o|1|x|
+1|v1|sample description|o|2|o|3|x|
+2|v2|sample description|o|3|o|4|o|5|x|
+3|v3|sample description|o|4|o|5|x|
+4|v4|sample description|o|5|x|
+5|v5|sample description|x|

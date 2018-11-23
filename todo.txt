@@ -3,3 +3,13 @@ low - med = high +
   +get total size of arr first
   +create arr of vertexes
   
+
+edge isn't picking up nod5->adj as null;
+not sure why
+
+set edges is fucked because I defined struct Vertex as nothing 
+
+then when I set everything to that it's always looking int the same place
+
+what if i nest edge within vertex
+

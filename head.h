@@ -12,8 +12,11 @@ using namespace std;
  */
 
 //struct prototypes
-struct Vertex ;//need this so Edge doesn't flip out on definition of VERTEX before it exists
+struct Vertex;//need this so Edge doesn't flip out on definition of VERTEX before it exists
+struct Edge;
 //
+
+
 
 struct Data{
   Data();
@@ -26,7 +29,8 @@ struct Edge{
   Edge();
   ~Edge();
   int disp();
-  Vertex * adj;
+  struct Vertex *adj;
+  //Vertex * adj;
   Edge * next;
   int targId;
 };
@@ -34,7 +38,8 @@ struct Vertex{
   Vertex(Edge * tEdge, Data * tData);//upon creation, takes in an edge* and a data*
   ~Vertex();
   Data * data;//data will store all identifying info to be read out to the user
-  Edge * head;//Edge LLL
+  struct Edge * head;
+  //Edge * head;//Edge LLL
   int id;
 };
 class Game{

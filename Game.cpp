@@ -21,7 +21,8 @@ int Game::setEdges(){
 }
 int Game::setEdges(Edge * & head){
   if(!head) return 0;
-  int sumSet = 1;
+  int sumSet = 0;
+  //cerr << "\n++++adj Vertex: " << adjList[head->targId]->data;
   head->adj = adjList[head->targId]; 
   return sumSet += setEdges(head->next);
 }
@@ -40,6 +41,7 @@ int Game::dispAll(int & size){
 }
 int Game::dispEdges(Edge * head){
   if(!head) return 0;
-  int sumEdg = 1;
-  return sumEdg += head->disp(); 
+  int sumEdg = 0;
+  sumEdg += head->disp(); 
+  return sumEdg += dispEdges(head->next);
 }

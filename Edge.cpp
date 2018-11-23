@@ -4,14 +4,14 @@
 Edge::Edge(){
   adj = NULL;
   next = NULL;
-  targId = 0;
+  targId = -1;
 }
 Edge::~Edge(){
   delete next;
 }
 int Edge::disp(){
   using namespace std;
-  if(!adj){
+  if(adj == NULL){
     cout << "\n/////Err: malformed Edge, no adjacent pointer\n";
     return 0;
   }
@@ -19,6 +19,6 @@ int Edge::disp(){
     cout << "\n/////Err: malformed Edge, adj point != targId\n";
     return 0;
   }
-  cout << "\nAdj: " << targId;
+  cout << "\nAdj: " << adj->data->title;
   return 1;
 }
