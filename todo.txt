@@ -1,0 +1,5 @@
+low - med = high +
+++read in data
+  +get total size of arr first
+  +create arr of vertexes
+  
