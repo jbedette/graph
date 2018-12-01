@@ -1,15 +1,9 @@
 low - med = high +
-++read in data
-  +get total size of arr first
-  +create arr of vertexes
-  
++depth first search,
+  =could be used to find longest path and assign last node to return to first
++create player to move through graph
+=store edge description in edge
+  =will need to modify read int
+=mem leaks
 
-edge isn't picking up nod5->adj as null;
-not sure why
-
-set edges is fucked because I defined struct Vertex as nothing 
-
-then when I set everything to that it's always looking int the same place
-
-what if i nest edge within vertex
-
+11/23 graph seems to be working
